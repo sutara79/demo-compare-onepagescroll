@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jquery.scrollablelink</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="jquery.scrollablelink.js"></script>
+
+<style>
+html,
+body {
+  height: 100%;
+}
+.pagebox {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+}
+#mushroom {
+  background-image: url(../img/001.jpg);
+}
+#piano {
+  background-image: url(../img/004.jpg);
+}
+#fruit {
+  background-image: url(../img/002.jpg);
+}
+#flower {
+  background-image: url(../img/003.jpg);
+}
+.pagebox .container {
+  /*margin-top: 100px;*/
+  padding-top: 100px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">jquery.scrollablelink</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a class="scrollable" href="#mushroom">プラグイン</a></li>
+        <li><a class="scrollable" href="#piano">はみ出たら</a></li>
+        <li><a class="scrollable" href="#fruit">ライブラリ</a></li>
+        <li><a class="scrollable" href="#flower">写真素材</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <section id="mushroom" class="pagebox"><!-- この<section>はプラグインで使うので、ここにBootstrapのクラスを指定してはダメ -->
+    <div class="container">
+      <h3>使用プラグイン</h3>
+      <p>
+        <strong>jquery.scrollablelink</strong> を使っています。<br>
+        <a href="http://webrocketsmagazine.com/entry/20111205/how-to-scroll-website-in-non-programing.html" target="_blank">http://webrocketsmagazine.com/entry/20111205/how-to-scroll-website-in-non-programing.html</a>
+      </p>
+    </div>
+  </section>
+<section id="piano" class="pagebox">
+  <div class="container">
+    <h3>はみ出す場合</h3>
+    <p>
+      このプラグインは画面に収まらなかった部分は、高さが100%を超えて柔軟に引き伸ばされるようです。
+    </p>
+    <p>
+      あああああ<br>
+      いいいいい<br>
+      ううううう<br>
+      えええええ<br>
+      おおおおお<br>
+      かかかかか<br>
+      ききききき<br>
+      くくくくく<br>
+      けけけけけ<br>
+      こここここ<br>
+      さささささ<br>
+      ししししし<br>
+      すすすすす<br>
+      せせせせせ<br>
+      そそそそそ<br>
+      たたたたた<br>
+      ちちちちち<br>
+      つつつつつ<br>
+      ててててて<br>
+      ととととと<br>
+      ななななな<br>
+      ににににに<br>
+      ぬぬぬぬぬ<br>
+      ねねねねね<br>
+      ののののの<br>
+      ははははは<br>
+      ひひひひひ<br>
+      ふふふふふ<br>
+      へへへへへ<br>
+      ほほほほほ<br>
+      ややややや<br>
+      ゆゆゆゆゆ<br>
+      よよよよよ<br>
+      ららららら<br>
+      りりりりり<br>
+      るるるるる<br>
+      れれれれれ<br>
+      ろろろろろ<br>
+      わわわわわ<br>
+      ををををを<br>
+      んんんんん<br>
+      <br>
+      あああああ<br>
+      いいいいい<br>
+      ううううう<br>
+      えええええ<br>
+      おおおおお<br>
+      かかかかか<br>
+      ききききき<br>
+      くくくくく<br>
+      けけけけけ<br>
+      こここここ<br>
+      さささささ<br>
+      ししししし<br>
+      すすすすす<br>
+      せせせせせ<br>
+      そそそそそ<br>
+      たたたたた<br>
+      ちちちちち<br>
+      つつつつつ<br>
+      ててててて<br>
+      ととととと<br>
+      ななななな<br>
+      ににににに<br>
+      ぬぬぬぬぬ<br>
+      ねねねねね<br>
+      ののののの<br>
+      ははははは<br>
+      ひひひひひ<br>
+      ふふふふふ<br>
+      へへへへへ<br>
+      ほほほほほ<br>
+      ややややや<br>
+      ゆゆゆゆゆ<br>
+      よよよよよ<br>
+      ららららら<br>
+      りりりりり<br>
+      るるるるる<br>
+      れれれれれ<br>
+      ろろろろろ<br>
+      わわわわわ<br>
+      ををををを<br>
+      んんんんん<br>
+    </p>
+  </div>
+</section>
+<section id="fruit" class="pagebox">
+  <div class="container">
+    <h3>使用ライブラリ、フレームワーク</h3>
+    <ul>
+      <li><a href="http://jquery.com" target="_blank">jQuery 1.12.4</a></li>
+      <li><a href="http://getbootstrap.com" target="_blank">Bootstrap 3.3.7</a></li>
+    </ul>
+  </div>
+</section>
+<section id="flower" class="pagebox">
+  <div class="container">
+    <h3>背景写真</h3>
+    <p>
+      下記のサイトの写真を使っています。<br>
+      <a href="http://www.ashinari.com/" target="_blank">http://www.ashinari.com/</a>
+    </p>
+  </div>
+</section>
+</body>
+</html>
