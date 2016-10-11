@@ -1,0 +1,53 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  -webkit-text-size-adjust: 100%; /* 文章の強制改行のために必要。iOS向け。 */
+  word-break: break-all; /* 文章の強制改行のために必要 */
+}
+.pagebox {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  padding: 100px 0;
+  position: relative;
+}
+.pagebox .container {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+#mushroom {
+  background-image: url(../img/001.jpg);
+}
+#piano {
+  background-image: url(../img/004.jpg);
+}
+#fruit {
+  background-image: url(../img/002.jpg);
+}
+#flower {
+  background-image: url(../img/003.jpg);
+}
+/**
+ * 次へスクロールするボタンの設定
+ */
+.pagebox .scroll-nav-container {
+  bottom: 1em;
+  font-size: 150%;
+  position: absolute;
+  width: 100%;
+}
+.pagebox .scroll-nav-container a {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  margin: auto;
+  text-align: center;
+  width: 50px;
+}
+.pagebox .scroll-nav-container .glyphicon {
+  vertical-align: text-bottom;
+}

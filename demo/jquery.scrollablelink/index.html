@@ -8,39 +8,6 @@
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="jquery.scrollablelink.js"></script>
-
-<style>
-html,
-body {
-  height: 100%;
-}
-body {
-  -webkit-text-size-adjust: 100%; /* 文章の強制改行のために必要。iOS向け。 */
-  word-break: break-all; /* 文章の強制改行のために必要 */
-}
-.pagebox {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 100%;
-  padding-top: 100px;
-}
-#mushroom {
-  background-image: url(../img/001.jpg);
-}
-#piano {
-  background-image: url(../img/004.jpg);
-}
-#fruit {
-  background-image: url(../img/002.jpg);
-}
-#flower {
-  background-image: url(../img/003.jpg);
-}
-.pagebox .container {
-  background-color: rgba(255, 255, 255, 0.6);
-}
-</style>
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -64,15 +31,20 @@ body {
     </div>
   </div>
 </nav>
-  <section id="mushroom" class="pagebox"><!-- この<section>はプラグインで使うので、ここにBootstrapのクラスを指定してはダメ -->
-    <div class="container">
-      <h3>使用プラグイン</h3>
-      <p>
-        <strong>jquery.scrollablelink</strong> を使っています。<br>
-        <a href="http://webrocketsmagazine.com/entry/20111205/how-to-scroll-website-in-non-programing.html" target="_blank">http://webrocketsmagazine.com/entry/20111205/how-to-scroll-website-in-non-programing.html</a>
-      </p>
-    </div>
-  </section>
+<section id="mushroom" class="pagebox"><!-- この<section>はプラグインで使うので、ここにBootstrapのクラスを指定してはダメ -->
+  <div class="container">
+    <h3>使用プラグイン</h3>
+    <p>
+      <strong>jquery.scrollablelink</strong> を使っています。<br>
+      <a href="http://webrocketsmagazine.com/entry/20111205/how-to-scroll-website-in-non-programing.html" target="_blank">http://webrocketsmagazine.com/entry/20111205/how-to-scroll-website-in-non-programing.html</a>
+    </p>
+  </div>
+  <div class="scroll-nav-container">
+    <a class="scrollable" href="#piano" aria-label="下へスクロール">
+      <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+    </a>
+  </div>
+</section>
 <section id="piano" class="pagebox">
   <div class="container">
     <h3>はみ出す場合</h3>
@@ -165,6 +137,11 @@ body {
       んんんんん<br>
     </p>
   </div>
+  <div class="scroll-nav-container">
+    <a class="scrollable" href="#fruit" aria-label="下へスクロール">
+      <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+    </a>
+  </div>
 </section>
 <section id="fruit" class="pagebox">
   <div class="container">
@@ -174,6 +151,11 @@ body {
       <li><a href="http://getbootstrap.com" target="_blank">Bootstrap 3.3.7</a></li>
     </ul>
   </div>
+  <div class="scroll-nav-container">
+    <a class="scrollable" href="#flower" aria-label="下へスクロール">
+      <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+    </a>
+  </div>
 </section>
 <section id="flower" class="pagebox">
   <div class="container">
@@ -182,6 +164,11 @@ body {
       下記のサイトの写真を使っています。<br>
       <a href="http://www.ashinari.com/" target="_blank">http://www.ashinari.com/</a>
     </p>
+  </div>
+  <div class="scroll-nav-container">
+    <a class="scrollable" href="#mushroom" aria-label="ページトップへ">
+      <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+    </a>
   </div>
 </section>
 </body>
