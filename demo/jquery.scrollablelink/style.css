@@ -6,6 +6,10 @@ body {
   -webkit-text-size-adjust: 100%; /* 文章の強制改行のために必要。iOS向け。 */
   word-break: break-all; /* 文章の強制改行のために必要 */
 }
+.footer {
+  padding: 2em;
+  background-color: #ddd;
+}
 .pagebox {
   background-position: center;
   background-repeat: no-repeat;
